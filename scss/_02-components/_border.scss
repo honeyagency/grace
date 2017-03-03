@@ -1,0 +1,22 @@
+hr {
+    margin-top: 1.5em;
+    border: 0;
+    border-bottom: 1px solid;
+    width: 100px;
+
+    &.border--2 {
+        border-bottom: 2px solid;
+    }
+
+    &.border--3 {
+        border-bottom: 3px solid;
+    }
+
+    &.border--4 {
+        border-bottom: 4px solid;
+    }
+
+    &.border--5 {
+        border-bottom: 5px solid;
+    }
+}

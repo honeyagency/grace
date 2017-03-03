@@ -1,0 +1,11 @@
+<section class="section--form" id="contact">
+	<div class="block--form-wrap max--wrap spacing--gutter-mob">
+	{% if home.contacttitle %}<h3 class="font--italic text--center">{{home.contacttitle}}</h3>{% endif %}
+	{{ function('do_shortcode', home.contactform) }}
+	<div class="block--icons">
+	
+		<i class="icon-linkedin" data-grunticon-embed></i>
+		<i class="icon-phone" data-grunticon-embed></i>
+	</div>
+</div>
+</section>

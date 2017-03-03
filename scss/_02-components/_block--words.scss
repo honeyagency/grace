@@ -1,0 +1,278 @@
+$delay: 0.15s;
+
+.block--words {
+    height: 100%;
+    width: 100%;
+
+    .block--word-wrap {
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+
+        .icon-logo {
+            max-width: 60%;
+            width: 350px;
+            opacity: 0;
+            animation-duration: $delay * 1.8;
+            animation-fill-mode: forwards;
+            animation-timing-function: $base-cubic;
+            animation-name: fadeIn;
+            position: absolute;
+            animation-delay: $delay * 13;
+            transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
+            -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
+        }
+
+        .intro--word {
+            font-size: 2.8rem;
+            width: 100%;
+            top: -8px;
+
+            @include media($screen-sm) {
+                font-size: 6rem;
+                top: -21px;
+            }
+
+
+            &:nth-of-type(odd) {
+                font-family: $heading-font-family;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
+            -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
+            position: absolute;
+            will-change: animation, top;
+            backface-visibility: hidden;
+            perspective: 1000;
+            -webkit-will-change: top;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+
+            opacity: 0;
+            animation-name: fadeInOut;
+
+            // animation declarations
+            animation-duration: $delay * 1.8;
+            animation-fill-mode: forwards;
+            animation-timing-function: $base-cubic;
+
+            &:nth-of-type(1) {
+                animation-delay: $delay * 1;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: $delay * 2;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: $delay * 3;
+            }
+
+            &:nth-of-type(4) {
+                animation-delay: $delay * 4;
+            }
+
+            &:nth-of-type(5) {
+                animation-delay: $delay * 5;
+            }
+
+            &:nth-of-type(6) {
+                animation-delay: $delay * 6;
+            }
+
+            &:nth-of-type(7) {
+                animation-delay: $delay * 7;
+            }
+
+            &:nth-of-type(8) {
+                animation-delay: $delay * 8;
+            }
+
+            &:nth-of-type(9) {
+                animation-delay: $delay * 9;
+            }
+
+            &:nth-of-type(10) {
+                animation-delay: $delay * 10;
+            }
+
+            &:nth-of-type(11) {
+                animation-delay: $delay * 11;
+            }
+
+            &:nth-of-type(12) {
+                animation-delay: $delay * 12;
+            }
+
+            //
+            // &:nth-of-type(1) {
+            //   animation-name: letter1fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter1fade;
+            //     }
+            // }
+
+            // &:nth-of-type(2) {
+            //     animation-name: letter2fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter2fade;
+            //     }
+            // }
+
+            // &:nth-of-type(3) {
+            //     animation-name: letter3fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter3fade;
+            //     }
+            // }
+
+            // &:nth-of-type(4) {
+            //     animation-name: letter4fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter4fade;
+            //     }
+            // }
+
+            // &:nth-of-type(5) {
+            //     animation-name: letter5fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter5fade;
+            //     }
+            // }
+
+            // &:nth-of-type(6) {
+            //     animation-name: letter3fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter3fade;
+            //     }
+            // }
+
+            // &:nth-of-type(7) {
+            //     animation-name: letter4fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter4fade;
+            //     }
+            // }
+
+            // &:nth-of-type(8) {
+            //     animation-name: letter1fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter1fade;
+            //     }
+            // }
+
+            // &:nth-of-type(9) {
+            //     animation-name: letter2fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter2fade;
+            //     }
+            // }
+
+            // &:nth-of-type(10) {
+            //     animation-name: letter3fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter3fade;
+            //     }
+            // }
+
+            // &:nth-of-type(11) {
+            //     animation-name: letter4fadeMob;
+
+            //     @include media($screen-sm) {
+            //         animation-name: letter4fade;
+            //     }
+            // }
+       
+        }
+    }
+
+    // &:after {
+    //     content: '';
+    //     width: 50%;
+    //     height: 50%;
+    //     border: 10px solid black;
+    //     display: block;
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 50%;
+    //     transform: translateY(-50%) translateX(-50%);
+    //     z-index: 0;
+    //     animation-name: squareZoom;
+    //     animation-duration: 1s;
+    //     animation-fill-mode: forwards;
+    //     animation-timing-function: cubic-bezier(0.65, 0.1, 1, 1.01);
+    // }
+}
+
+@include keyframes(squareZoom) {
+    0% {
+        opacity: 0;
+        width: 0%;
+        height: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+@include media($screen-sm) {
+    .arrow-down {
+        height: 25px;
+        width: 25px;
+        border-bottom: 5px solid transparentize($black, 0.8);
+        border-right: 5px solid transparentize($black, 0.8);
+        transform: translateX(-50%) translateY(0px) rotate(45deg);
+        position: absolute;
+        left: 50%;
+        bottom: -3em;
+        opacity: 0;
+        animation: arrow 0.5s 1 normal $base-cubic forwards ($delay * 13.5), pulse 0.7s 8 alternate ease-in-out forwards ($delay * 15);
+        bottom: -3em;
+    }
+}
+
+
+@include keyframes(arrow) {
+    0% {
+        opacity: 0;
+        bottom: -3em;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 1.5em;
+    }
+}
+
+
+@include keyframes(pulse) {
+    0% {
+        transform: translateX(-50%) translateY(0px) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(7px) rotate(45deg);
+    }
+}

@@ -1,0 +1,28 @@
+{% block html_head_container %}
+	{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	{% include 'components/blocks/block--grunticon.twig' %}
+</head>
+{% endblock %}
+<body class="{{body_class}} " data-template="base.twig">
+<header class="header">
+	{% block header %}
+			<h1 class="hdr-logo" role="banner"><a class="hdr-logo-link" href="/" rel="home">{{site.name}}</a></h1>
+			{# {% include 'components/sections/section--navigation.twig' %} #}
+		{% endblock %}
+	</header>
+	<main id="content" role="main" >
+	{% block content %}
+		Sorry, no content
+	{% endblock %}
+	
+	</main>
+	{% block footer %}
+		<footer id="footer">
+			{% include 'footer.twig' %}
+		</footer>
+		{{ function('wp_footer') }}
+	{% endblock %}
+</body>
+</html>

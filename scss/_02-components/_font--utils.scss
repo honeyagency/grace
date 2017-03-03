@@ -1,0 +1,26 @@
+.font--larger {
+    @include media($screen-sm) {
+        font-size: $base-font-size * 1.2;
+    }
+
+
+    @include media($screen-md) {}
+
+
+    @include media($screen-lg) {}
+
+
+    @include media($screen-xl) {}
+}
+
+.font--italic {
+    font-style: italic;
+}
+
+.font--bold {
+    font-weight: 600;
+}
+
+.text--center {
+    text-align: center;
+}

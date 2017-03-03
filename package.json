@@ -1,0 +1,39 @@
+{
+  "name": "grace-public-affairs",
+  "version": "1.0.0",
+  "description": "Single page website for Grace Public Affairs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshre/buscemi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshre/buscemi/issues"
+  },
+  "homepage": "https://github.com/joshre/buscemi#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-cssnano": "^2.1.0",
+    "grunt-grunticon": "^2.2.2",
+    "grunt-notify": "^0.4.5",
+    "grunt-postcss": "^0.7.2",
+    "grunt-sass": "^1.1.0",
+    "grunt-svgmin": "^4.0.0",
+    "load-grunt-tasks": "^3.4.1",
+    "postcss-font-magician": "^1.6.0"
+  },
+  "dependencies": {}
+}

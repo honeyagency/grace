@@ -1,0 +1,75 @@
+footer {
+    position: relative;
+}
+
+.footer-bottom {
+    text-align: center;
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 4em 0 1em;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+}
+
+.section--form {
+    .block--form-wrap {
+        label {
+            color: white;
+        }
+
+        @include row;
+
+        position: relative;
+
+        .wpcf7 {
+            @include span-columns(12 of 12);
+        }
+
+        .block--icons {
+        
+            
+
+            i {
+                height: 1.5em;
+                width: 1.5em;
+
+                svg {
+                    path, rect {
+                        fill: white;
+                    }
+                }
+            }
+
+            @include media($screen-md) {
+                text-align: left;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                right: -4em;
+
+                @include span-columns(1 of 12);
+
+                i {
+                    height: 1em;
+                    width: 1em;
+                    display: block;
+
+                    &:first-of-type {
+                        margin-bottom: .4em;
+                    }
+                }
+            }
+
+
+            @include media($max-sm) {
+                display: block;
+                text-align: center;
+                clear: both;
+                padding-top: 1em;
+            }
+        }
+    }
+}

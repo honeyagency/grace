@@ -1,0 +1,59 @@
+.section--fix {
+    top: 0;
+    padding-top: 30px;
+    position: sticky;
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparentize(map-get($gray, font), 0.8);
+    width: 100%;
+
+    @include row;
+
+    .icon-logo {
+        @include span-columns(1.5 of 12);
+
+        svg {
+            path {}
+        }
+    }
+
+    .block--fix-icons {
+        text-align: right;
+
+        @include span-columns(9.5 of 12);
+
+        float: right;
+
+        a {
+            display: inline-block;
+            height: 35px;
+            width: 45px;
+            text-align: center;
+
+            i {
+                height: 100%;
+                width: 35px;
+
+                svg {
+                    path {}
+                }
+            }
+        }
+    }
+
+    i {
+        opacity: 0;
+        transition: opacity 0.3s $base-timing;
+    }
+
+    &.fix {
+        i {
+            opacity: 1;
+            transition: opacity 0.3s $base-timing;
+        }
+    }
+
+    @include media($max-sm) {
+        display: none !important;
+        visibility: hidden;
+    }
+}

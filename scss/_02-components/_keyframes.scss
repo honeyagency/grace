@@ -1,0 +1,110 @@
+@include keyframes(slideIn) {
+    from {
+        transform: translateY(2em);
+        line-height: $base-line-height * $base-line-height;
+    }
+
+    to {
+        transform: translateY(0em);
+        line-height: $base-line-height;
+    }
+}
+
+
+@include keyframes(slideDown) {
+    from {
+        margin-top: 3.2em;
+    }
+
+    to {
+        margin-top: 3.5em;
+    }
+}
+
+
+@include keyframes(fadeIn) {
+    0% {
+        opacity: 0;
+        // top: -6.00rem;
+    }
+
+    100% {
+        // top: 0;
+        opacity: 1;
+    }
+}
+
+
+@include keyframes(fadeInOut) {
+    0% {
+        opacity: 0;
+        // top: -6.00rem;
+    }
+
+    50% {
+        // top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        // top: 6.00rem;
+    }
+}
+
+@include keyframes(letter1fadeMob) {
+       0% {opacity: 0;top: -24px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 24px;}
+}
+@include keyframes(letter1fade) {
+
+
+    0% {opacity: 0;top: -60px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 60px;}
+}
+@include keyframes(letter2fadeMob) {
+      0% {opacity: 0;top: -16px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 16px;}
+}
+@include keyframes(letter2fade) {
+  
+
+    0% {opacity: 0;top: -40px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 40px;}
+}
+@include keyframes(letter3fadeMob) {
+     0% {opacity: 0;top: -36px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 20px;}}
+@include keyframes(letter3fade) {
+
+    0% {opacity: 0;top: -90px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 50px;}
+}
+@include keyframes(letter4fadeMob) {
+      0% {opacity: 0;top: -12px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 12px;}}
+@include keyframes(letter4fade) {
+
+    0% {opacity: 0;top: -30px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 30px;}
+}
+@include keyframes(letter5fadeMob) {
+   
+    0% {opacity: 0;top: -26px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 26px;}}
+@include keyframes(letter5fade) {
+  
+    0% {opacity: 0;top: -65px;}
+    50% {top: 0;opacity: 1;}
+    100% {opacity: 0;top: 65px;}
+
+}

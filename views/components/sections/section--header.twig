@@ -1,0 +1,12 @@
+<section class="section--header">
+	<div class="block--words">
+		<div class="block--word-wrap">
+			{% for word in home.words %}
+
+				<span class="intro--word" id="word-{{loop.index}}">{{word}}</span>
+			{% endfor %}
+			<i class="icon-logo" data-grunticon-embed></i>
+		</div>
+	</div>
+	<span class="arrow-down"></span>
+</section>

@@ -1,0 +1,82 @@
+{
+    "key": "group_58af337427a6f",
+    "title": "Social Media",
+    "fields": [
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_56ce02c41bf14",
+            "label": "Linkedin URL",
+            "name": "linkedin_url",
+            "type": "text",
+            "instructions": "i.e. https:\/\/www.linkedin.com\/company\/honey-agency",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "formatting": "html"
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_56ce03f21bf17",
+            "label": "Phone Number",
+            "name": "phone_number",
+            "type": "text",
+            "instructions": "i.e. (916) 444-0203",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "formatting": "html"
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_56ce04201bf18",
+            "label": "Email",
+            "name": "email_url",
+            "type": "email",
+            "instructions": "i.e. buzz@honeyagency.com",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "5"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1487876993
+}

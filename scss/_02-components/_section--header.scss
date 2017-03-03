@@ -1,0 +1,6 @@
+.section--header {
+	height: 50vh;
+    @include media($screen-sm) {
+        height: 100vh;
+    }
+}
