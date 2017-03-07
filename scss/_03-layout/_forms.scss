@@ -87,6 +87,22 @@ textarea {
     border-radius: 3px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s $base-cubic;
+    appearance: none;
+    outline: none;
+
+    &:hover {
+        outline: none;
+        background-color: transparentize(white, 0.6);
+        transition: background-color 0.2s $base-cubic;
+    }
+
+    &:active {
+        outline: none;
+        background-color: transparentize(white, 0.4);
+        transition: background-color 0.2s $base-cubic;
+    }
 }
 
 select {

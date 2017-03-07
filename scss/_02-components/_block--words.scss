@@ -24,6 +24,10 @@ $delay: 0.15s;
             animation-delay: $delay * 13;
             transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
             -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
+
+            svg {
+                width: 100%;
+            }
         }
 
         .intro--word {
@@ -55,7 +59,6 @@ $delay: 0.15s;
             -webkit-will-change: top;
             -webkit-backface-visibility: hidden;
             -webkit-perspective: 1000;
-
             opacity: 0;
             animation-name: fadeInOut;
 

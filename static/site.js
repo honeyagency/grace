@@ -16,7 +16,6 @@ function debounce(func, wait, immediate) {
 
 function stickyNav(e) {
     var $fixSpot = $('.section--header').next().offset().top - 10;
-
     var $theWin = $(document).scrollTop();
     var $theBod = $('body');
     var $datNav = $('.section--fix');
@@ -49,14 +48,27 @@ var toTopDebounce = debounce(function(e) {
 var stickyNavDebounce = debounce(function(e) {
     stickyNav(e);
 }, 15);
-if ( $(window).width() > 768) {      
-window.addEventListener('scroll', stickyNavDebounce);
-} else{
+if ($(window).width() > 768) {
+    window.addEventListener('scroll', stickyNavDebounce);
+} else {
     console.log('fish');
 }
-
 window.addEventListener('scroll', toTopDebounce);
 jQuery(document).ready(function(e) {
     stickyNav(e);
     toTop(e);
+});
+jQuery(function() {
+  jQuery('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = jQuery(this.hash);
+      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jQuery('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });

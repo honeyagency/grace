@@ -31,6 +31,11 @@ if (!is_admin()) {
     add_action("wp_enqueue_scripts", "jquery_enqueue", 11);
 }
 
+add_action( 'wp_print_styles', 'dequeue_contact_form7', 100 );
+function dequeue_contact_form7() {
+    // wp_deregister_style( 'contact-form-7' );
+}
+
 function jquery_enqueue()
 {
     wp_dequeue_script('jquery');
