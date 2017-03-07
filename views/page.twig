@@ -1,14 +1,12 @@
 {% extends "base.twig" %}
-
 {% block content %}
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.title}}</h1>
-				<div class="article-body">
-					{{post.content}}
-				</div>
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
+	<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+		<section class="article-content spacing--gutter spacing--vert-2">
+			<h1>{{post.title}}</h1>
+			<div class="article-body grid--half">
+				{{post.content}}
+			</div>
+			<a href="{{site.url}}" class="button color--black">Return Home</a>
+		</section>
+	</article>
 {% endblock %}

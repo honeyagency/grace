@@ -1,3 +1,26 @@
+.button {
+    border: 1px solid $black;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    font-size: .9rem;
+    text-decoration: none;
+    transition: background-color 0.2s $base-cubic, color 0.2s $base-cubic;
+
+    &:hover {
+        transition: background-color 0.2s $base-cubic, color 0.2s $base-cubic;
+        background-color: $black;
+        color: white;
+    }
+
+    &:active {
+        transition: background-color 0.2s $base-cubic, color 0.2s $base-cubic;
+        background-color: transparentize($black, 0.4);
+        color: white;
+    }
+}
+
 .phone {
     position: relative;
     text-decoration: none !important;
