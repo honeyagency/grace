@@ -50,8 +50,6 @@ var stickyNavDebounce = debounce(function(e) {
 }, 15);
 if ($(window).width() > 768) {
     window.addEventListener('scroll', stickyNavDebounce);
-} else {
-    console.log('fish');
 }
 window.addEventListener('scroll', toTopDebounce);
 jQuery(document).ready(function(e) {
