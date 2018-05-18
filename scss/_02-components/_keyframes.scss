@@ -38,17 +38,21 @@
 @include keyframes(fadeInOut) {
     0% {
         opacity: 0;
-        // top: -6.00rem;
-    }
 
-    50% {
-        // top: 0;
+    }
+    1%{
         opacity: 1;
     }
+    50% {
 
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
     100% {
         opacity: 0;
-        // top: 6.00rem;
+
     }
 }
 

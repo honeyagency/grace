@@ -1,4 +1,4 @@
-$delay: 0.15s;
+$delay: .6s;
 
 .block--words {
     height: 100%;
@@ -22,7 +22,7 @@ $delay: 0.15s;
             animation-timing-function: $base-cubic;
             animation-name: fadeIn;
             position: absolute;
-            animation-delay: $delay * 13;
+            animation-delay: $delay * 7;
             transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
             -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0, 0, 0);
 
@@ -64,7 +64,7 @@ $delay: 0.15s;
             animation-name: fadeInOut;
 
             // animation declarations
-            animation-duration: $delay * 1.8;
+            animation-duration: $delay * .9;
             animation-fill-mode: forwards;
             animation-timing-function: $base-cubic;
 
@@ -252,7 +252,7 @@ $delay: 0.15s;
         left: 50%;
         bottom: -3em;
         opacity: 0;
-        animation: arrow 0.5s 1 normal $base-cubic forwards ($delay * 13.5), pulse 0.7s 8 alternate ease-in-out forwards ($delay * 15);
+        animation: arrow 0.5s 1 normal $base-cubic forwards ($delay * 7.5), pulse 0.7s 8 alternate ease-in-out forwards ($delay * 9);
         bottom: -3em;
     }
 }
